@@ -27,10 +27,10 @@ Installation
 bash
 Copy code
 # Clone the repository
-git clone https://github.com/yourusername/yourproject.git
+git clone https://github.com/kee-rti/Feedback.git
 
 # Navigate to the project directory
-cd yourproject
+cd project
 
 # Install dependencies
 pip install -r requirements.txt
