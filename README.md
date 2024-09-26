@@ -1,4 +1,4 @@
-###Table of Contents
+### Table of Contents
 Introduction
 Features
 Screenshots
@@ -7,28 +7,32 @@ Installation
 Usage
 
 
-##Introduction
+## Introduction
 This project is a feedback collection application that allows users to submit feedback easily. The main goal is to gather valuable insights to improve our services.
 
-##Features
+## Features
 Feature 1: Feedback form submission (data stored at admin panel)
 Feature 2: Thankyou page with details of user and time of submission
 
-##Screenshots
+## Screenshots
 
-###Home Page
+### Home Page
 ![homepage](https://github.com/Kee-rti/Feedback/blob/master/project/media/home.png?raw=true)
-###Feedback Form
+### Feedback Form
 ![form](https://github.com/Kee-rti/Feedback/blob/master/project/media/form.png?raw=tue)
-###Thank You Page
+### Thank You Page
 ![thankyou](https://github.com/Kee-rti/Feedback/blob/master/project/media/thankyou.png?raw=true)
+### Admin Page
+![admin](https://github.com/Kee-rti/Feedback/blob/master/project/media/feedback.png?raw=true)
+![feedback](https://github.com/Kee-rti/Feedback/blob/master/project/media/admin.png?raw=true)
+
 
 ### Prerequisites
 - Python
 - Django
 
 
-##Installation
+## Installation
 
 bash
 Copy code
