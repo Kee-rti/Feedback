@@ -1,0 +1,42 @@
+{% extends "app/base.html" %}
+{% block content %}
+<div class="main">
+    <div class="quote">
+        "The only way to do great work is to love what you do." - Steve Jobs
+    </div>
+    <img src="{{ image_url }}" alt="Feedback" class="main-image">
+
+</div>
+<div class="feedback-form">
+    <h2>Your feedback matters!<br> how can i improve this page?</h2>
+    <form method="post" id="feedbackForm" action="{% url 'feedback_form' %}">
+        
+        {% csrf_token %}
+        <div>
+            {{ form.name.label_tag }} <br>
+            {{ form.name }}
+            {% if form.name.errors %}
+                <div class="error">{{ form.name.errors }}</div>
+            {% endif %}
+        </div>
+        
+        <div>
+            {{ form.email.label_tag }} <br>
+            {{ form.email }}
+            {% if form.email.errors %}
+                <div class="error">{{ form.email.errors }}</div>
+            {% endif %}
+        </div>
+        
+        <div>
+            {{ form.feedback.label_tag }} <br>
+            {{ form.feedback }}
+            {% if form.feedback.errors %}
+                <div class="error">{{ form.feedback.errors }}</div>
+            {% endif %}
+        </div>
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'feedback_form' %}">Home</a></li>
+            <li><a href="{% url 'feedback_form' %}">Give feedback</a></li>
+            <li><a href="{% url 'feedback_form' %}">Contact</a></li>
+        </ul>
+    </nav>
+    {% block content %}{% endblock content%}
+    <footer class="footer">
+        <p>Contact us: info@gmail.com | Phone: 0123456789</p>
+        <p>abc road, India</p>
+    </footer>
+</body>
+</html>
